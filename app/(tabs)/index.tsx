@@ -1,14 +1,14 @@
 import { StyleSheet } from 'react-native';
-
+import PhotoGalery from "../../components/PhotoGalery";
 import EditScreenInfo from '../../components/EditScreenInfo';
 import { Text, View } from '../../components/Themed';
 
-export default function TabOneScreen() {
+
+const TabOneScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/index.tsx" />
+      <PhotoGalery/>
+
     </View>
   );
 }
@@ -29,3 +29,4 @@ const styles = StyleSheet.create({
     width: '80%',
   },
 });
+export default TabOneScreen;
